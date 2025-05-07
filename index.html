@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - codingnepalweb.com -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="./styles.css">
+    
+    <!-- ===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- ==== Bootstrape link ==== -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+    <!-- ==== fontawesom icond ==== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- ==== Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet"> 
+    
+    <title>Responsive Navigation Menu Bar</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-bar">
+            <i class='bx bx-menu sidebarOpen'></i>
+            <span class="logo navLogo"><a href="#"><svg width="30" height="34" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g id="IconLogoImage-Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="IconLogoImage-CL-Logo" transform="translate(1)" fill="#8E1A86" fill-rule="nonzero"><path d="M10.217 23.029l2.04.971 2.029-.954-2.04-2.052-2.029 2.035zm4.869-3.812L13.6 20.84l2.577 1.091 1.097-2.588-2.194-.126h.006zm-5.652 0l-2.194.12 1.08 2.589 2.583-1.075-1.474-1.628.005-.006zm8.989 2.126l2.148-.772.766-2.137H18.43l-.006 2.909zM3.206 18.429l.748 2.142 2.132.76v-2.897h-2.88v-.005zm9.063-.863l-1.578.72 1.572 1.577 1.571-1.566-1.571-.748.006.017zM16 16l-.571 1.657h2.222V15.43L16 16zm-9.143 1.651h2.229l-.572-1.645-1.64-.572-.017 2.217zm-3.154-4.04L2.61 16.19 5.2 17.28l.131-2.194L3.71 13.6l-.006.011zm.954-1.342l1.566 1.571.754-1.577-.748-1.572-1.572 1.578zm-4.126 0l.972 2.017 2.051-2.046-2.04-2.023-.983 2.052zM2.63 8.326l1.08 2.577 1.628-1.48-.126-2.194L2.63 8.326zm12.8-1.435L16 8.537l1.64.572V6.897h-2.211v-.006zM6.89 9.103l1.64-.572.572-1.64H6.874l.017 2.212zm3.818-2.857l1.571.748 1.577-.743-1.577-1.588-1.571 1.583zm7.737-.115h2.891L20.571 4l-2.12-.777-.005 2.908zM4 3.96l-.783 2.137h2.897V3.206L4 3.96zm9.663-.251l1.474 1.628 2.194-.12-1.108-2.583-2.56 1.075zM7.263 5.2l2.194.131 1.486-1.622L8.37 2.623 7.263 5.2zM12.286.531l-2.046.972 2.04 2.051 2.046-2.034-2.04-.989z" id="IconLogoImage-Shape"></path></g></g></svg></a></span>
+            <div class="menu">
+                <div class="logo-toggle">
+                    <span class="logo"><a href="#">CodingLab</a></span>
+                    <i class='bx bx-x siderbarClose'></i>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="darkLight-searchBox">
+                <div class="dark-light">
+                    <i class='bx bx-moon moon'></i>
+                    <i class='bx bx-sun sun'></i>
+                </div>
+                <div class="searchBox">
+                    <div class="searchToggle">
+                        <i class='bx bx-x cancel'></i>
+                        <i class='bx bx-search search'></i>
+                    </div>
+                    <div class="search-field">
+                        <input type="text" placeholder="Search...">
+                        <i class='bx bx-search'></i>
+                    </div>
+                </div>
+                <!-- User and Cart Icons -->
+                <div class="nav-icons">
+                    <a href="./login.html"><i class='bx bx-user user-icon'></i></a>
+                    <a href="#"><i class='bx bx-cart cart-icon'></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div style="background-color: #4F3267;height: 100px;width: 100%;margin-bottom: 2rem;"></div>
+
+    <!-- Carousel -->
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000" style="width: 95%; margin: auto;margin-bottom: 2rem;">
+      <div class="carousel-inner">
+          <div class="carousel-item active">
+              <img src="./Asserts/one.jpg" class="d-block w-100" alt="..." style="border-radius: 10px;">
+          </div>
+          <div class="carousel-item">
+              <img src="./Asserts/two.jpg" class="d-block w-100" alt="..." style="border-radius: 10px;">
+          </div>
+          <div class="carousel-item">
+              <img src="./Asserts/four.png" class="d-block w-100" alt="..." style="border-radius: 10px;">
+          </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+      </button>
+  </div>
+  
+      
+
+  <!--products One  -->
+  <div id="sectionone">
+    <div style="width: 50%; position: relative; z-index: 10;">
+        <img src="./Asserts/three.jpg" alt="" width="110%" height="300px" style="border-radius: 10px;">
+    </div>
+    <div id="carosal">
+        <div id="imgbox"> 
+            <img src="./Asserts/jone.png" alt="">
+            <img src="./Asserts/jtwo.png" alt="">
+            <img src="./Asserts/jthree.png" alt="">
+            <img src="./Asserts/jfour.png" alt="">
+            <img src="./Asserts/jfive.png" alt="">
+            <img src="./Asserts/jsix.png" alt="">
+            <img src="./Asserts/jseven.png" alt="">
+            <img src="./Asserts/jeight.png" alt="">
+            <img src="./Asserts/jnine.png" alt="">
+            <img src="./Asserts/jten.png" alt="">
+            <img src="./Asserts/jeleven.png" alt="">
+            <img src="./Asserts/jtwelve.png" alt="">
+            <img src="./Asserts/jfive.png" alt="">
+            <img src="./Asserts/jsix.png" alt="">
+            <img src="./Asserts/jseven.png" alt="">
+            <img src="./Asserts/jeight.png" alt="">
+            <img src="./Asserts/jnine.png" alt="">
+            <img src="./Asserts/jten.png" alt="">
+        </div>
+        <div class="controls">
+            <div class="left-controls">
+              <button id="prevBtn" style="border-radius: 50%;"><i class="fas fa-arrow-left"></i></button>
+              <button id="nextBtn" style="border-radius: 50%;"><i class="fas fa-arrow-right"></i></button>
+            </div>
+            <div class="right-control">
+              <!-- <a href="./products.html" style="text-decoration: none;"> -->
+                <button id="viewAllBtn" style="border-radius: 20px;
+                height:40px;">View Full Collection</button>
+              <!-- </a> -->
+            </div>
+        </div>          
+    </div> 
+  </div>
+
+  <!-- section two -->
+  <div id="sectiontwo">
+    <div id="one"><img src="./Asserts/shagun.jpg" alt=""></div>
+    <div id="two">
+        <div><img src="./Asserts/dia.jpg" alt=""></div>
+        <div><img src="./Asserts/bala.jpg" alt=""></div>
+    </div>
+  </div>
+
+  <div id="box">
+    <div style="display: flex;flex-direction: column;align-items: center;justify-content: center;">
+        <img src="./Asserts/lone.png" alt="" width="60%">
+        <p>Wrapped with Love</p>
+    </div>
+    <div style="display: flex;width: 78%;align-items: center;justify-content: space-around;padding-top: 1.5rem;">
+        <div style="display: flex;flex-direction: column;align-items: center;">
+            <img src="./Asserts/ltwo.jpg" alt="" width="65%" style="border-radius: 10px;">
+            <p style="padding-top: 12px;
+            font-size:14px;
+            line-height: 12px;
+            color: rgb(79, 50, 103);">LATEST RINGS</p>
+        </div>
+        <div style="display: flex;flex-direction: column;align-items: center;">
+            <img src="./Asserts/lthree.jpg" alt="" width="65%" style="border-radius: 10px;">
+            <p style="padding-top: 12px;
+            font-size:14px;
+            line-height: 12px;
+            color: rgb(79, 50, 103);">TRENDY BRACLETS</p>
+        </div>
+        <div style="display: flex;flex-direction: column;align-items: center;">
+            <img src="./Asserts/lfour.jpg" alt="" width="65%" style="border-radius: 10px;">
+            <p style="padding-top: 12px;
+            font-size:14px;
+            line-height: 12px;
+            color: rgb(79, 50, 103);">MUST-HAVE EARINGS</p>
+        </div>
+        <div style="display: flex;flex-direction: column;align-items: center;">
+            <img src="./Asserts/lsux.jpg" alt="" width="65%" style="border-radius: 10px;">
+            <p style="padding-top: 12px;
+            font-size:14px;
+            line-height: 12px;
+            color: rgb(79, 50, 103);">ALL-DAY CHAINS</p>
+        </div>
+        <div style="display: flex;flex-direction: column;align-items: center;">
+            <img src="./Asserts/lseven.jpg" alt="" width="65%" style="border-radius: 10px;"> 
+            <p style="padding-top: 12px;
+            font-size:14px;
+            line-height: 12px;
+            color: rgb(79, 50, 103);">ON-TREND NECKLACE</p>
+        </div>
+        <div style="display: flex;flex-direction: column;align-items: center;">
+            <img src="./Asserts/leight.jpg" alt="" width="65%" style="border-radius: 10px;">
+            <p style="padding-top: 12px;
+            font-size:14px;
+            line-height: 12px;
+            color: rgb(79, 50, 103);">UNDER RS30k STYLES</p>
+        </div>
+    </div>
+  </div>
+  
+  <!-- carosal brands -->
+  <div style="width: 95%; margin: auto;">
+    <div id="carosal1">
+      <div id="imgbox1"> 
+        <div class="img-wrapper"><img src="./Asserts/done.jpg" alt=""></div>
+        <div class="img-wrapper"><img src="./Asserts/dtwo.jpg" alt=""></div>
+        <div class="img-wrapper"><img src="./Asserts/dthree.jpg" alt=""></div>
+        <div class="img-wrapper"><img src="./Asserts/dfour.jpg" alt=""></div>
+        <div class="img-wrapper"><img src="./Asserts/dfive.jpg" alt=""></div>
+        <div class="img-wrapper"><img src="./Asserts/dsix.jpg" alt=""></div>
+      </div>
+    </div>
+  </div>
+  
+  <footer>
+    <div class="footer">
+      <div class="footer-row social">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-youtube"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+      </div>
+  
+      <div class="footer-row links">
+        <ul>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Our Services</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Career</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-row copyright">
+        © 2021 <strong>INFERNO</strong> - All rights reserved | Designed by: Mahesh
+      </div>
+    </div>
+  </footer>
+  
+
+    <script src="./script.js"></script>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+</html>

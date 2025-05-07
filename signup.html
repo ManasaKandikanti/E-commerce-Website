@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sign Up Form</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fork-awesome/1.2.0/css/fork-awesome.min.css">
+  <link rel="stylesheet" href="./signu.css">
+</head>
+<body>
+  <div class="overlay">
+    <form>
+      <div class="con">
+        <header class="head-form">
+          <h2>Sign Up</h2>
+          <p>Create your account below</p>
+        </header>
+
+        <div class="field-set">
+          <!-- First Name -->
+          <div class="input-wrap">
+            <span class="input-item"><i class="fa fa-user"></i></span>
+            <input class="form-input" type="text" placeholder="First Name" required>
+          </div>
+
+          <!-- Last Name -->
+          <div class="input-wrap">
+            <span class="input-item"><i class="fa fa-user"></i></span>
+            <input class="form-input" type="text" placeholder="Last Name" required>
+          </div>
+
+          <!-- Email -->
+          <div class="input-wrap">
+            <span class="input-item"><i class="fa fa-envelope"></i></span>
+            <input class="form-input" type="email" placeholder="Email" required id="email">
+          </div>
+
+          <!-- Phone -->
+          <div class="input-wrap">
+            <span class="input-item"><i class="fa fa-phone"></i></span>
+            <input class="form-input" type="tel" placeholder="Phone Number" required id="phone">
+          </div>
+
+          <!-- Password -->
+          <div class="input-wrap">
+            <span class="input-item"><i class="fa fa-key"></i></span>
+            <input class="form-input" type="password" placeholder="Password" id="signup-pwd" required>
+            <span class="toggle-eye"><i class="fa fa-eye" id="signup-eye" aria-hidden="true"></i></span>
+          </div>
+
+          <!-- Submit Button -->
+          <button class="log-in">Sign up</button>
+        </div>
+
+        <div class="other">
+          <p>Already have an account? <a href="" onclick="window.location.href='./login.html'">Log In</a></p>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <script src="./signup.js"></script>
+</body>
+</html>

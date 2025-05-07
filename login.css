@@ -1,0 +1,185 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Abel|Playfair+Display|Vibur');
+
+/* Reset & base styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family: 'Abel', sans-serif;
+    opacity: .95;
+}
+
+/* Form Container */
+form {
+    width: 450px;
+    min-height: 400px;
+    height: auto;
+    border-radius: 5px;
+    margin: 2% auto;
+    box-shadow: 0 9px 50px hsla(20, 67%, 75%, 0.31);
+    padding: 2%;
+    background-image: linear-gradient(-225deg, #E3FDF5 50%, #FFE6FA 50%);
+}
+
+/* Flex container inside form */
+form .con {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+/* Header styles */
+header {
+    margin: 2% auto 10% auto;
+    text-align: center;
+}
+
+header h2 {
+    font-size: 250%;
+    font-family: 'Playfair Display', serif;
+    color: #3e403f;
+}
+
+header p {
+    letter-spacing: 0.05em;
+}
+
+/* Wrapper for icon + input */
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Icon box */
+.input-item {
+    background: #fff;
+    color: #333;
+    padding: 15px 10px;
+    border-radius: 5px 0 0 5px;
+}
+
+/* Input box */
+input.form-input {
+    flex: 1;
+    height: 50px;
+    padding: 15px;
+    font-size: 16px;
+    font-family: 'Abel', sans-serif;
+    color: #5E6472;
+    outline: none;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    transition: 0.2s linear;
+}
+
+/* Eye icon container */
+.eye-wrapper {
+    background: #fff;
+    padding: 15px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    margin-left: -5px;
+}
+
+.eye-wrapper i {
+    color: #333;
+}
+
+/* Buttons */
+button {
+    display: inline-block;
+    color: #252537;
+    width: 280px;
+    height: 50px;
+    padding: 0 20px;
+    background: #fff;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.2s linear;
+    margin: 7% auto;
+    letter-spacing: 0.05em;
+}
+
+/* Hover effect on buttons */
+button:hover {
+    transform: translateY(3px);
+    animation: button-bounce 0.4s ease-in-out infinite alternate;
+}
+
+@keyframes button-bounce {
+    0% {
+        transform: translateY(3px);
+    }
+    100% {
+        transform: translateY(5px);
+    }
+}
+
+/* Other links styling */
+.other {
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    color: #444;
+    display: flex;
+}
+
+.other a {
+    text-decoration: none;
+    color: #3e403f;
+    font-weight: bold;
+}
+
+.frgt-pass {
+    background: transparent;
+}
+
+.sign-up {
+    background: #B8F2E6;
+}
+
+
+a.btn.sign-up {
+    display: inline-block;
+    width: 48%;
+    height: 50px;
+    padding: 14px 20px;
+    background: #B8F2E6;
+    color: #252537;
+    border-radius: 5px;
+    font-family: 'Abel', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 2%;
+    margin-top: 7%;
+    letter-spacing: 0.05em;
+    transition: all 0.2s linear;
+  }
+  
+  /* Hover effect same as button */
+  a.btn.sign-up:hover {
+    transform: translateY(3px);
+    animation: button-bounce 0.4s ease-in-out infinite alternate;
+  }
+  
+  @keyframes button-bounce {
+    0% {
+      transform: translateY(3px);
+    }
+    100% {
+      transform: translateY(5px);
+    }
+  }
